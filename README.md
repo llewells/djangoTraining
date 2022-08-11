@@ -1,2 +1,2 @@
 # djangoTraining
-LinkedIn Danjo Training
+LinkedIn Django Training
