@@ -35,10 +35,10 @@ class NotesListView(LoginRequiredMixin, ListView):
     model = Notes
     context_object_name = "notes"
     template_name = "notes/notes_list.html"
-    login_url = "/admin"
+    login_url = "/admin/"
 
     def get_queryset(self):
-        return sel.request.user.notes.all()
+        return self.request.user.notes.all()
 
 
 class NotesDetailView(DetailView):
